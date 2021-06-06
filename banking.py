@@ -46,7 +46,7 @@ class System:
         else:
             self.luhn_number = self.luhn_number + str(0)
         return self.luhn_number
-
+    # check if card is valid or not
     def validity_checker(self):
         only_list = [int(i) for i in self.only_card]
         for k in range(len(only_list)):
